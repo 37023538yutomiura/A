@@ -39,7 +39,7 @@ for n1, n2 in links:
         nodes[n1].to(torch.int).tolist(),
         nodes[n2].to(torch.int).tolist(),
         (0, 255, 0),
-        thickness=1,
+        thickness=3,
     )
     cv2.circle(
         img,
