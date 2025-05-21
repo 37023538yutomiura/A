@@ -55,15 +55,16 @@ for n1, n2 in links:
         (255, 0, 0),
         -1
     )
-    xlef_s=nodes[5][0].to(torch.int).tolist()
-    xrig_s=nodes[6][0].to(torch.int).tolist()
-    xlef_h=nodes[11][0].to(torch.int).tolist()
-    xrig_h=nodes[12][0].to(torch.int).tolist()
+    xlef_s=nodes[5][0]
+    xrig_s=nodes[6][0]
+    xlef_h=nodes[11][0]
+    xrig_h=nodes[12][0]
     
-    ylef_s=nodes[5][1].to(torch.int).tolist()
-    yrig_s=nodes[6][1].to(torch.int).tolist()
-    ylef_h=nodes[11][1].to(torch.int).tolist()
-    yrig_h=nodes[12][1].to(torch.int).tolist()
+    ylef_s=nodes[5][1]
+    yrig_s=nodes[6][1]
+    ylef_h=nodes[11][1]
+    yrig_h=nodes[12][1]
+        
         
     cv2.circle(
         img,
