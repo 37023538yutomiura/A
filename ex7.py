@@ -12,6 +12,7 @@ count_w = (results[0].boxes.cls == 0).sum().item()
 img = results[0].plot()
 
 
+
 resized_img = cv2.resize(img, dsize=None, fx=0.5, fy=0.5)
 print("black"+str(count_b))
 print("white"+str(count_w))
