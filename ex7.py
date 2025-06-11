@@ -30,6 +30,7 @@ for box in results[0].boxes:
     w_count = np.count_nonzero(white_mask)
     b_count = np.count_nonzero(black_mask)
 
+
     region_area = (x2 - x1) * (y2 - y1)
 
     # 条件判定
