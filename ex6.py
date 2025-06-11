@@ -1,6 +1,5 @@
 import cv2
 from ultralytics import YOLO
-import torch
 import numpy as np
 
 model = YOLO("yolov8x.pt")
@@ -33,9 +32,7 @@ for box in results[0].boxes:
     yellow_count = np.count_nonzero(yellow_mask)
     white_count = np.count_nonzero(white_mask)
 
-    # 合成マスク
-    com_mask = blue_mask | white_mask | red_mask
-    com_count = np.count_nonzero(com_mask)
+    com_count = np.count_nonzero(blue_mask | white_mask | red_mask)
 
     region_area = (x2 - x1) * (y2 - y1)
 
