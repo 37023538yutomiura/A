@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 img = cv2.imread("ex3.jpg")
 
-model = YOLO("best.pt")
+model = YOLO("best_ex9.pt")
 
 results = model.predict(img, conf=0.03)
 
