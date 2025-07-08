@@ -1,0 +1,5 @@
+train: ex9/datasets/images/train
+val: ex9/datasets/images/val
+
+nc: 2
+names: ['BAR', 'FCB']
