@@ -19,3 +19,4 @@ print("white"+str(count_w))
 cv2.imshow("Result", resized_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
