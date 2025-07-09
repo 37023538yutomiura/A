@@ -5,7 +5,7 @@ img = cv2.imread("ex4.jpg")
 
 model = YOLO("best_ex8.pt")
 
-results = model.predict(img, conf=0.03)
+results = model.predict(img, conf=0.4)
 
 count_b = (results[0].boxes.cls == 1).sum().item()
 count_w = (results[0].boxes.cls == 0).sum().item()
